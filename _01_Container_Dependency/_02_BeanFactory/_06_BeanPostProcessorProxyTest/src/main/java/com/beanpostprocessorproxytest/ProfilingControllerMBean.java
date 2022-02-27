@@ -5,6 +5,5 @@ package com.beanpostprocessorproxytest;
  * требует в имени интерфейса использовать суффикс MBean
  */
 public interface ProfilingControllerMBean {
-
     void setEnabled(boolean enabled);
 }
