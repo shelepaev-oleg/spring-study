@@ -1,0 +1,14 @@
+mvn archetype:generate "-DgroupId=com.shelepaevoa" "-DartifactId=proxy-kind" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DarchetypeVersion=1.4" "-DinteractiveMode=false"
+
+Linux:
+mvn archetype:generate "-DarchetypeGroupId=com.deangerber.archetypes" \
+                    "-DarchetypeArtifactId=java11-junit5-archetype" \
+                    "-DarchetypeVersion=1.0.0-SNAPSHOT" \
+                    "-DgroupId=com.shelepaevoa" \
+                    "-DartifactId=proxy-kind" \
+                    "-Dversion=1.0.0-SNAPSHOT" \
+                    "-DinteractiveMode=false"
+
+mvn archetype:generate "-DarchetypeGroupId=com.deangerber.archetypes" "-DarchetypeArtifactId=java11-junit5-archetype" "-DarchetypeVersion=1.0.0-SNAPSHOT" "-DgroupId=com.shelepaevoa" "-DartifactId=proxy-kind"  "-Dversion=1.0.0-SNAPSHOT" "-DinteractiveMode=false"
+
+mvn archetype:generate "-DgroupId=com.shelepaevoa" "-DartifactId=proxy-kind" "-DarchetypeGroupId=org.cornputer" "-DarchetypeArtifactId=quickstart-java11" "-DarchetypeVersion=1.2.1"
