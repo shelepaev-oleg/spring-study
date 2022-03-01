@@ -1,9 +1,11 @@
 package com.threephaseconstructor;
 
+import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 
+@Component
 public class QuoterImpl implements Quoter {
-    private String message;
 
     public QuoterImpl() {
         System.out.println("Phase_1");
@@ -14,14 +16,8 @@ public class QuoterImpl implements Quoter {
         System.out.println("Phase_2");
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    @Override
     @PostProxy
     public void sayQuoter() {
         System.out.println("Phase_3");
-        System.out.println(message);
     }
 }
