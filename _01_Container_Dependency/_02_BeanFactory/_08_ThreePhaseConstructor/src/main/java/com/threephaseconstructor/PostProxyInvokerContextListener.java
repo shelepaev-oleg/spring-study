@@ -30,7 +30,7 @@ public class PostProxyInvokerContextListener implements ApplicationListener<Cont
                 // Получаем все методы класса Bean-а
                 Method[] methods = originalClass.getDeclaredMethods();
                 for (Method method : methods) {
-                    // Находим в классе Bean-а, помеченный аннотацией PostProxy
+                    // Находим в классе Bean, помеченный аннотацией PostProxy
                     if (method.isAnnotationPresent(PostProxy.class)) {
                         // Получаем Bean
                         Object bean = context.getBean(name);
