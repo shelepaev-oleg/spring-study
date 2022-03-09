@@ -1,14 +1,15 @@
 package com.screensaver;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-@Service
-@Scope("prototype")
+/**
+ * Класс описывает МО, которое постоянно меняет местоположение
+ */
+@Component
 public abstract class ColorFrame extends JFrame {
 
     public ColorFrame(){
@@ -17,6 +18,9 @@ public abstract class ColorFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
+    /**
+     * Метод, меняющий местоположение и цвет
+     */
     public void showOnRandomPlace() {
         Random random = new Random();
         setLocation(random.nextInt(1200), random.nextInt(700));
@@ -24,5 +28,8 @@ public abstract class ColorFrame extends JFrame {
         repaint();
     }
 
+    /**
+     * Цвет необходимо менять, поэтому здесь его сделаем abstract, а в конфиге будем создавать
+     */
     protected abstract Color getColor();
 }
