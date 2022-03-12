@@ -10,6 +10,7 @@ todo.txt
 .env
 /tmp/
 
+**/dependency-reduced-pom.xml
 
 ### STS ###
 .apt_generated

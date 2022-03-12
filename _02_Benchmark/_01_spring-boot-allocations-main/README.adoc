@@ -3,6 +3,11 @@ To run the performance benchmarks:
 1: `mvn clean install`
 2: `java -jar target/benchmarks.jar`
 
+Исходники взяты из репозитория:
+https://github.com/dsyer/spring-boot-startup-bench
+
+Работает только на Java 1.8
+
 This project contains some benchmarks on Spring Boot startup time. The
 findings here have shown us how to make several optimizations in
 Spring Boot 2.1, 2.2 and Spring 5.1, 5.2, so those are highlighted. The
