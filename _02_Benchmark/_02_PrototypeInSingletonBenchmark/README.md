@@ -11,6 +11,10 @@ MainBenchmark.prototypeInSingletonOk       ss   10  0,245 ? 0,029   s/op
 MainBenchmark.prototypeInSingletonWrong    ss   10  0,277 ? 0,114   s/op
 Чем меньше Score, тем лучше
 
+Работает только на Java 1.8,
+т.к. пример взят с репозитория https://github.com/dsyer/spring-boot-startup-bench 
+,то нужно там смотреть переход на более свежую версию Java
+
 
 Режимы работы JMH:
 https://stackoverflow.com/questions/24928922/jmh-what-does-the-score-value-mean
